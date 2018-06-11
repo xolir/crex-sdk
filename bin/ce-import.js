@@ -151,6 +151,7 @@ new Promise((resolve, reject) => {
 	spinner.text = 'Cleaning up...';
 
 	fs.unlink('ce-import.zip', function(err){
+		console.log(err);
 		if (err) return;
 	});
 
